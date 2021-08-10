@@ -1,0 +1,16 @@
+/* Ofront+ 1.0 -si3 -44 */
+
+#ifndef Tools__oh
+#define Tools__oh
+
+#include "SYSTEM.oh"
+
+
+
+
+#define Tools__init()
+
+#define Tools_Random()	random()
+#define Tools_SetRandomSeed(seed)	setRandomSeed(seed);
+
+#endif

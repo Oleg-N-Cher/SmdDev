@@ -1,0 +1,16 @@
+/* Ofront+ 1.0 -s3 -21 */
+
+#ifndef SYS__oh
+#define SYS__oh
+
+#include "SYSTEM.oh"
+
+
+
+
+#define SYS__init()
+
+#define SYS_DoVBlankProcess()	SYS_doVBlankProcess()
+#include <genesis.h>
+
+#endif

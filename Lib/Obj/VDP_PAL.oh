@@ -1,0 +1,16 @@
+/* Ofront+ 1.0 -si3 -44 */
+
+#ifndef VDP_PAL__oh
+#define VDP_PAL__oh
+
+#include "SYSTEM.oh"
+
+
+
+
+#define VDP_PAL__init()
+
+#define VDP_PAL_SetPalette(num, pal)	VDP_setPalette(num, pal)
+#define VDP_PAL_SetPaletteColor(index, value)	VDP_setPaletteColor(index, value)
+
+#endif

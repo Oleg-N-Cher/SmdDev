@@ -1,0 +1,22 @@
+/* Ofront+ 1.0 -si3 -44 */
+
+#ifndef PAL__oh
+#define PAL__oh
+
+#include "SYSTEM.oh"
+
+typedef
+	struct PAL_Palette {
+		SHORTINT length;
+		SHORTINT *data;
+	} PAL_Palette;
+
+
+
+
+#define PAL__init()
+
+#define PAL_SetColor(index, value)	PAL_setColor(index, value)
+#define PAL_SetColors(index, pal, count)	PAL_setColors(index, pal, count)
+
+#endif

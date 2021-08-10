@@ -1,0 +1,8 @@
+MODULE [foreign] SYS; IMPORT SYSTEM;
+
+TYPE Bool = INT16;
+
+PROCEDURE- includegenesis "#include <genesis.h>";
+PROCEDURE- DoVBlankProcess(): Bool "SYS_doVBlankProcess()";
+
+END SYS.
