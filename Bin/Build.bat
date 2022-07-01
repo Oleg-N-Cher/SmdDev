@@ -5,4 +5,4 @@ IF EXIST %GDK_WIN%\bin SET "PATH=%PATH%;%GDK_WIN%\bin"
 make.exe -f makefile.gen
 IF errorlevel 1 PAUSE
 
-START d:\WIN32APP\Emulz\Fusion364\Fusion.exe d:\Projects\XDev\SegaDev\Obj\out\rom.bin
+START d:\WIN32APP\Emulz\Fusion364\Fusion.exe d:\Projects\XDev\SmdDev\Obj\out\rom.bin

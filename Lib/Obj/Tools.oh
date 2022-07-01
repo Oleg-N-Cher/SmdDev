@@ -1,4 +1,4 @@
-/* Ofront+ 1.0 -si3 -44 */
+/* Ofront+ 1.0 -si3 -21 */
 
 #ifndef Tools__oh
 #define Tools__oh
@@ -8,9 +8,8 @@
 
 
 
-#define Tools__init()
 
-#define Tools_Random()	random()
-#define Tools_SetRandomSeed(seed)	setRandomSeed(seed);
+#define Tools_Random()  random()
+#define Tools_SetRandomSeed(seed)  setRandomSeed(seed);
 
 #endif

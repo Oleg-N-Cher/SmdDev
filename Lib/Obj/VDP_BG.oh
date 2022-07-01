@@ -1,4 +1,4 @@
-/* Ofront+ 1.0 -si3 -44 */
+/* Ofront+ 1.0 -si3 -21 */
 
 #ifndef VDP_BG__oh
 #define VDP_BG__oh
@@ -8,24 +8,23 @@
 #include "VDP_TILE.oh"
 
 typedef
-	struct VDP_BG_Image {
-		PAL_Palette *palette;
-		VDP_TILE_TileSet *tileset;
-		VDP_TILE_TileMap *tilemap;
-	} VDP_BG_Image;
+  struct VDP_BG_Image {
+    PAL_Palette *palette;
+    VDP_TILE_TileSet *tileset;
+    VDP_TILE_TileMap *tilemap;
+  } VDP_BG_Image;
 
 typedef
-	CHAR *VDP_BG_String;
+  CHAR *VDP_BG_String;
 
 
 
 
-#define VDP_BG__init()
 
-#define VDP_BG_ClearPlane(plane, wait)	VDP_clearPlane(plane, wait)
-#define VDP_BG_ClearTextAreaBG(plane, x, y, w, h)	VDP_clearTextAreaBG(plane, x, y, w, h)
-#define VDP_BG_DrawImage(plane, image, x, y)	VDP_drawImage(plane, (Image*)image, x, y)
-#define VDP_BG_DrawText(str, x, y)	VDP_drawText(str, x, y)
-#define VDP_BG_SetTextPalette(palette)	VDP_setTextPalette(palette)
+#define VDP_BG_ClearPlane(plane, wait)  VDP_clearPlane(plane, wait)
+#define VDP_BG_ClearTextAreaBG(plane, x, y, w, h)  VDP_clearTextAreaBG(plane, x, y, w, h)
+#define VDP_BG_DrawImage(plane, image, x, y)  VDP_drawImage(plane, (Image*)image, x, y)
+#define VDP_BG_DrawText(str, x, y)  VDP_drawText(str, x, y)
+#define VDP_BG_SetTextPalette(palette)  VDP_setTextPalette(palette)
 
 #endif

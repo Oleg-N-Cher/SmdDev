@@ -1,5 +1,5 @@
 #define SHORTINT unsigned short
-/* Ofront+ 1.0 -si3 -44 */
+/* Ofront+ 1.0 -si3 -21 */
 
 #ifndef VDP__oh
 #define VDP__oh
@@ -10,14 +10,13 @@
 import SHORTINT bga_addr, bgb_addr, window_addr, bga_addr, bgb_addr, hscrl_addr, slist_addr, maps_addr, userTileMaxIndex;
 
 
-#define VDP__init()
 
-#define VDP_GetScreenWidth()	VDP_getScreenWidth()
-#define VDP_Init()	VDP_init()
-#define VDP_SetScreenHeight224()	VDP_setScreenHeight224()
-#define VDP_SetScreenHeight240()	VDP_setScreenHeight240()
-#define VDP_SetScreenWidth256()	VDP_setScreenWidth256()
-#define VDP_SetScreenWidth320()	VDP_setScreenWidth320()
+#define VDP_GetScreenWidth()  VDP_getScreenWidth()
+#define VDP_Init()  VDP_init()
+#define VDP_SetScreenHeight224()  VDP_setScreenHeight224()
+#define VDP_SetScreenHeight240()  VDP_setScreenHeight240()
+#define VDP_SetScreenWidth256()  VDP_setScreenWidth256()
+#define VDP_SetScreenWidth320()  VDP_setScreenWidth320()
 #include <genesis.h>
 
 #endif

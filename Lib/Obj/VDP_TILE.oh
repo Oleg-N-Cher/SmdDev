@@ -1,4 +1,4 @@
-/* Ofront+ 1.0 -si3 -44 */
+/* Ofront+ 1.0 -si3 -21 */
 
 #ifndef VDP_TILE__oh
 #define VDP_TILE__oh
@@ -6,26 +6,24 @@
 #include "SYSTEM.oh"
 
 typedef
-	struct VDP_TILE_TileMap {
-		SHORTINT compression, w, h;
-		SHORTINT *tilemap;
-	} VDP_TILE_TileMap;
+  struct VDP_TILE_TileMap {
+    SHORTINT compression, w, h;
+    SHORTINT *tilemap;
+  } VDP_TILE_TileMap;
 
 typedef
-	struct VDP_TILE_TileSet {
-		SHORTINT compression, numTile;
-		INTEGER tiles;
-	} VDP_TILE_TileSet;
+  struct VDP_TILE_TileSet {
+    SHORTINT compression, numTile, tiles;
+  } VDP_TILE_TileSet;
 
 
 
 
-#define VDP_TILE__init()
 
-#define VDP_TILE_ATTR(pal, prio, flipV, flipH)	(((flipH) << TILE_ATTR_HFLIP_SFT) + ((flipV) << TILE_ATTR_VFLIP_SFT) + ((pal) << TILE_ATTR_PALETTE_SFT) + ((prio) << TILE_ATTR_PRIORITY_SFT))
-#define VDP_TILE_ATTR_FULL(pal, prio, flipV, flipH, index)	(((flipH) << TILE_ATTR_HFLIP_SFT) + ((flipV) << TILE_ATTR_VFLIP_SFT) + ((pal) << TILE_ATTR_PALETTE_SFT) + ((prio) << TILE_ATTR_PRIORITY_SFT) + (index))
-#define VDP_TILE_LoadTileData(data, index, num, tm)	VDP_loadTileData((unsigned long*)data, index, num, tm)
-#define VDP_TILE_LoadTileSet(tileset, index, tm)	VDP_loadTileSet((TileSet*)tileset, index, tm)
-#define VDP_TILE_SetTileMapXY(plane, tile, x, y)	VDP_setTileMapXY((VDPPlane)plane, tile, x, y)
+#define VDP_TILE_ATTR(pal, prio, flipV, flipH)  (((flipH) << TILE_ATTR_HFLIP_SFT) + ((flipV) << TILE_ATTR_VFLIP_SFT) + ((pal) << TILE_ATTR_PALETTE_SFT) + ((prio) << TILE_ATTR_PRIORITY_SFT))
+#define VDP_TILE_ATTR_FULL(pal, prio, flipV, flipH, index)  (((flipH) << TILE_ATTR_HFLIP_SFT) + ((flipV) << TILE_ATTR_VFLIP_SFT) + ((pal) << TILE_ATTR_PALETTE_SFT) + ((prio) << TILE_ATTR_PRIORITY_SFT) + (index))
+#define VDP_TILE_LoadTileData(data, index, num, tm)  VDP_loadTileData((unsigned long*)data, index, num, tm)
+#define VDP_TILE_LoadTileSet(tileset, index, tm)  VDP_loadTileSet((TileSet*)tileset, index, tm)
+#define VDP_TILE_SetTileMapXY(plane, tile, x, y)  VDP_setTileMapXY((VDPPlane)plane, tile, x, y)
 
 #endif
